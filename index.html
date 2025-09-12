@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ritesh Kolate | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Ritesh Kolate, a Computer Science student. Projects, skills, and contact information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/image.png" type="image/png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home">Ritesh <span>Kolate</span></a>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            ☰
+          </button>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle theme"
+            title="Toggle theme"
+          >
+            🌙
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="home" class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow">Computer Science Student</p>
+            <h1>Hi, I'm <span class="accent">Ritesh Kolate</span>.</h1>
+            <p class="subtitle">
+              I build clean, performant web experiences and love solving
+              real-world problems with code.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn ghost" href="#contact">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img
+              src="images/image.png"
+              alt="Ritesh Kolate portrait"
+              loading="lazy"
+              style="z-index: 2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section about">
+        <div class="container grid-2">
+          <div>
+            <h2>About Me</h2>
+            <p>
+              I'm a Computer Science student passionate about full‑stack web
+              development, user‑centric design, and building impactful projects.
+              I enjoy working with modern JavaScript, crafting intuitive UIs,
+              and continuously learning new technologies.
+            </p>
+            <ul class="highlights">
+              <li>Strong fundamentals in data structures and algorithms</li>
+              <li>Hands‑on projects with responsive UI and clean code</li>
+              <li>Curious, collaborative, and detail‑oriented</li>
+            </ul>
+            <div class="cta-row">
+              <a class="btn" href="#contact">Let's Collaborate</a>
+              <a class="btn ghost" href="./Ritesh_Kolate_Resume.pdf" download
+                >Download Resume</a
+              >
+            </div>
+          </div>
+          <div class="about-media">
+            <img
+              src="images/ritesh.jpg"
+              alt="Coding illustration"
+              loading="lazy"
+              style="z-index: 2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-groups">
+            <div class="group">
+              <h3>Languages</h3>
+              <ul class="skills-list">
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <div class="group">
+              <h3>Frameworks & CSS</h3>
+              <ul class="skills-list">
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            </div>
+            <div class="group">
+              <h3>Libraries & Runtime</h3>
+              <ul class="skills-list">
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+              </ul>
+            </div>
+            <div class="group">
+              <h3>Databases</h3>
+              <ul class="skills-list">
+                <li>MongoDB</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects with Slider -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <div class="projects-header">
+            <h2>Projects</h2>
+            <p class="subtitle">A few works showcasing my learning journey.</p>
+          </div>
+
+          <div class="projects-grid static-grid">
+            <figure class="project-card">
+              <img
+                src="images/spotify.png"
+                alt="Spotify Clone preview"
+                draggable="false"
+              />
+              <figcaption class="meta">
+                <h3>Spotify Clone</h3>
+                <p class="subtitle">HTML + CSS clone of Spotify homepage.</p>
+                <div class="actions">
+                  <a
+                    class="btn primary"
+                    href="https://riteshkolate21.github.io/spotify-clone/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live</a
+                  >
+                  <a
+                    class="btn ghost"
+                    href="https://github.com/RiteshKolate21/spotify-clone"
+                    target="_blank"
+                    rel="noopener"
+                    >Repo</a
+                  >
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="project-card">
+              <img
+                src="images/agro.png"
+                alt="Agro Expert preview"
+                draggable="false"
+              />
+              <figcaption class="meta">
+                <h3>Agro Expert</h3>
+                <p class="subtitle">
+                  ML-driven crop & fertilizer recommendations.
+                </p>
+                <div class="actions">
+                  <a
+                    class="btn ghost"
+                    href="https://github.com/RiteshKolate21/Agro_Expert"
+                    target="_blank"
+                    rel="noopener"
+                    >Repo</a
+                  >
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact">
+        <div class="container grid-2">
+          <div>
+            <h2>Contact</h2>
+            <p>
+              Have an opportunity or want to collaborate? Reach out and I'll get
+              back soon.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:riteshkolate@example.com"
+                  >riteshkolate@example.com</a
+                >
+              </li>
+              <li><strong>Location:</strong> India</li>
+            </ul>
+          </div>
+          <form class="contact-form" name="contact" netlify>
+            <input type="hidden" name="form-name" value="contact" />
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Ritesh Kolate. All rights reserved.</p>
+        <div class="socials">
+          <a
+            href="https://github.com/RiteshKolate21"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/ritesh-kolate/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-square-linkedin"></i
+          ></a>
+          <!-- <a href="https://x.com/KolateRitesh" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-square-x-twitter" ></i></a> -->
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <noscript
+      >Enable JavaScript to view the slider and navigation menu.</noscript
+    >
+  </body>
+</html>
