@@ -1,4 +1,3 @@
-// Mobile nav toggle
 const navToggleButton = document.getElementById('nav-toggle');
 const navMenu = document.getElementById('nav-menu');
 if (navToggleButton && navMenu) {
@@ -14,8 +13,7 @@ if (navToggleButton && navMenu) {
   });
 }
 
-// Projects slider removed; using static grid
-// Theme toggle with persistence
+
 const htmlEl = document.documentElement;
 const themeToggleBtn = document.getElementById('theme-toggle');
 const savedTheme = localStorage.getItem('theme');
@@ -33,7 +31,7 @@ if (themeToggleBtn) {
   });
 }
 
-// Reveal on scroll animations
+
 const revealEls = document.querySelectorAll('.section, .hero-media img, .about-media img');
 const onReveal = () => {
   const trigger = window.innerHeight * 0.88;
@@ -46,10 +44,9 @@ revealEls.forEach(el => el.classList.add('reveal'));
 window.addEventListener('scroll', onReveal, { passive: true });
 window.addEventListener('load', onReveal);
 
-// Footer year
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-// Aurora background removed
+
 
 
