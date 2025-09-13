@@ -38,54 +38,38 @@
     <link rel="icon" href="images/image.png" type="image/png" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#home">Ritesh <span>Kolate</span></a>
-        <nav class="nav" id="site-nav" aria-label="Primary">
-          <button
-            class="nav-toggle"
-            id="nav-toggle"
-            aria-expanded="false"
-            aria-controls="nav-menu"
-          >
-            ☰
-          </button>
-          <ul class="nav-menu" id="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <button
-            class="theme-toggle"
-            id="theme-toggle"
-            aria-label="Toggle theme"
-            title="Toggle theme"
-          >
-            🌙
-          </button>
-        </nav>
-      </div>
-    </header>
 
     <main>
  
       <section id="home" class="section hero">
         <div class="container hero-inner">
-          <div class="hero-text">
-            <p class="eyebrow">Computer Science Student</p>
-            <h1>Hi, I'm <span class="accent">Ritesh Kolate</span>.</h1>
-            <p class="subtitle">
-              I build clean, performant web experiences and love solving
-              real-world problems with code.
-            </p>
-            <div class="cta-row">
-              <a class="btn primary" href="#projects">View Projects</a>
-              <a class="btn ghost" href="#contact">Contact Me</a>
+          <div class="hero-content">
+            <div class="hero-text">
+              <p class="eyebrow">Hi, I am</p>
+              <h1 class="hero-name">RITESH</h1>
+              <p class="hero-title">Full Stack Developer</p>
             </div>
+            
+            <div class="hero-buttons">
+              <button class="glow-button about-btn" onclick="scrollToSection('about')">About Me</button>
+              <button class="glow-button tech-btn" onclick="scrollToSection('skills')">Tech</button>
+              <button class="glow-button projects-btn" onclick="scrollToSection('projects')">Projects</button>
+            </div>
+            
+            <div class="social-buttons">
+              <a href="https://github.com/RiteshKolate21" class="social-btn github-btn" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/ritesh-kolate/" class="social-btn linkedin-btn" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="mailto:riteshkolate05@example.com" class="social-btn email-btn">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+            
+           
           </div>
-          
         </div>
       </section>
 
@@ -226,43 +210,7 @@
         </div>
       </section>
 
-      <!-- Contact -->
-      <section id="contact" class="section contact">
-        <div class="container grid-2">
-          <div>
-            <h2>Contact</h2>
-            <p>
-              Have an opportunity or want to collaborate? Reach out and I'll get
-              back soon.
-            </p>
-            <ul class="contact-list">
-              <li>
-                <strong>Email:</strong>
-                <a href="mailto:riteshkolate@example.com"
-                  >riteshkolate@example.com</a
-                >
-              </li>
-              <li><strong>Location:</strong> India</li>
-            </ul>
-          </div>
-          <form class="contact-form" name="contact" netlify>
-            <input type="hidden" name="form-name" value="contact" />
-            <label>
-              Name
-              <input type="text" name="name" required />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" required />
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows="5" required></textarea>
-            </label>
-            <button class="btn primary" type="submit">Send Message</button>
-          </form>
-        </div>
-      </section>
+
     </main>
 
     <footer class="site-footer">

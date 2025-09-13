@@ -1,19 +1,15 @@
-const navToggleButton = document.getElementById('nav-toggle');
-const navMenu = document.getElementById('nav-menu');
-if (navToggleButton && navMenu) {
-  navToggleButton.addEventListener('click', () => {
-    const isOpen = navMenu.classList.toggle('open');
-    navToggleButton.setAttribute('aria-expanded', String(isOpen));
-  });
-  navMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('open');
-      navToggleButton.setAttribute('aria-expanded', 'false');
+// Smooth scrolling function for hero buttons
+function scrollToSection(sectionId) {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
     });
-  });
+  }
 }
 
-
+// Theme toggle functionality
 const htmlEl = document.documentElement;
 const themeToggleBtn = document.getElementById('theme-toggle');
 const savedTheme = localStorage.getItem('theme');
@@ -31,7 +27,7 @@ if (themeToggleBtn) {
   });
 }
 
-
+// Scroll reveal animation
 const revealEls = document.querySelectorAll('.section, .hero-media img, .about-media img');
 const onReveal = () => {
   const trigger = window.innerHeight * 0.88;
@@ -44,9 +40,6 @@ revealEls.forEach(el => el.classList.add('reveal'));
 window.addEventListener('scroll', onReveal, { passive: true });
 window.addEventListener('load', onReveal);
 
+// Update copyright year
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-
-
-
-
