@@ -195,7 +195,7 @@ body {
   color: var(--muted);
 }
 .about-media img {
-  width: 100%;
+  width: 80%;
   border-radius: 14px;
   border: 1px solid var(--border);
 }
